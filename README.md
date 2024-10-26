@@ -35,7 +35,7 @@ Amazon CloudWatch: For monitoring infrastructure, logging application events, an
 For tracing requests through your distributed services.
 Security and Access Control:
 
-#AWS IAM (Identity and Access Management):- 
+# AWS IAM (Identity and Access Management):- 
 
 For managing access to AWS resources and setting up fine-grained permissions for users, services, and roles.
 AWS Secrets Manager or Parameter Store: To securely store and manage sensitive configuration data (e.g., API keys, database credentials).
