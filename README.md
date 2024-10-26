@@ -39,13 +39,13 @@ Security and Access Control:
 For managing access to AWS resources and setting up fine-grained permissions for users, services, and roles.
 AWS Secrets Manager or Parameter Store: To securely store and manage sensitive configuration data (e.g., API keys, database credentials).
 File Distribution:
-
+================================================================================================================================================
  
 
 # Alternatives to AWS Elastic Beanstalk
 AWS Elastic Beanstalk is a platform-as-a-service (PaaS) that abstracts infrastructure management, but there are several other options available for deploying your web application:
 
-ECS or EKS AWS Fargate :- 
+# ECS or EKS AWS with Fargate or without Fargate:- 
 
 Amazon ECS (Elastic Container Service) with Fargate: A container-based deployment solution that eliminates the need to manage servers. You can define your backend services and worker processes in Docker containers and deploy them using ECS.
 Amazon EKS (Elastic Kubernetes Service) with Fargate: For containerized workloads, EKS provides Kubernetes as a managed service, and Fargate allows running containers without managing underlying EC2 instances.
@@ -64,7 +64,8 @@ Kubernetes (Self-managed or with EKS):
 If you're looking for container orchestration with more flexibility and custom control, you could use Kubernetes (either self-managed on EC2 or via Amazon EKS). This allows for a highly scalable, distributed system, suitable for microservices architectures.
 Third-party Platforms:
 
-Heroku: Offers an even higher level of abstraction than Elastic Beanstalk. It's easier to set up but may have higher costs at scale.
+# Heroku:-
+Offers an even higher level of abstraction than Elastic Beanstalk. It's easier to set up but may have higher costs at scale.
 Google Cloud Run or Azure App Service: Similar PaaS services on different cloud providers if you're considering multi-cloud or alternative cloud platforms.
 
 # Amazon CloudFront: 
