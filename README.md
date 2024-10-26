@@ -33,13 +33,17 @@ If you wish to migrate from manually configured OpenSearch, AWS provides a manag
 Amazon CloudWatch: For monitoring infrastructure, logging application events, and setting up alarms for system health checks.
 # AWS X-Ray: 
 For tracing requests through your distributed services.
-Security and Access Control:
 
-# AWS IAM (Identity and Access Management):- 
-
+# Security and Access Control:
+AWS IAM (Identity and Access Management):- 
 For managing access to AWS resources and setting up fine-grained permissions for users, services, and roles.
-AWS Secrets Manager or Parameter Store: To securely store and manage sensitive configuration data (e.g., API keys, database credentials).
-File Distribution:
+# AWS Secrets Manager or Parameter Store:
+To securely store and manage sensitive configuration data (e.g., API keys, database credentials).
+# File Distribution:
+Amazon CloudFront: For serving the React front end efficiently with content distribution and caching.
+# Messaging (Optional):
+Amazon SQS (Simple Queue Service): If the worker service or other services require message queuing for background tasks or decoupling services.
+Amazon SNS (Simple Notification Service): For sending notifications or alerts within the application or to external systems.
 
 ================================================================================================================================================
  
