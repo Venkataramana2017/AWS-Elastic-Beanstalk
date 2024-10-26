@@ -40,6 +40,7 @@ Security and Access Control:
 For managing access to AWS resources and setting up fine-grained permissions for users, services, and roles.
 AWS Secrets Manager or Parameter Store: To securely store and manage sensitive configuration data (e.g., API keys, database credentials).
 File Distribution:
+
 ================================================================================================================================================
  
 
