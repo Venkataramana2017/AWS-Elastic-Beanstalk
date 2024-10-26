@@ -3,21 +3,21 @@
 # AWS Resources Needed
 Compute Resources:
 
-#1.Amazon EC2 (Elastic Compute Cloud): For manually managing compute resources or specialized requirements. The existing MongoDB server is already running on an EC2 instance.
+# Amazon EC2 (Elastic Compute Cloud): For manually managing compute resources or specialized requirements. The existing MongoDB server is already running on an EC2 instance.
 Elastic Beanstalk: Currently used to deploy the application server and worker services, which abstracts EC2 but can still use underlying EC2 instances or other compute resources (Elastic Load Balancer, Auto Scaling, etc.).
 Alternative Compute: EC2 instances can also be provisioned directly if needed.
 AWS Lambda: Serverless compute can be an option for certain backend tasks or functions, especially those triggered by events.
 Database:
 
-#2.Amazon DocumentDB (Optional): If you want a managed service that is compatible with MongoDB, Amazon DocumentDB would replace the current MongoDB running on EC2, offering better scalability, availability, and automated backups.
+# Amazon DocumentDB (Optional): If you want a managed service that is compatible with MongoDB, Amazon DocumentDB would replace the current MongoDB running on EC2, offering better scalability, availability, and automated backups.
 EC2 for MongoDB: Continue using an EC2 instance with MongoDB installed as in the current setup.
 Storage:
 
-#3.Amazon S3 (Simple Storage Service): Already used for storing uploaded files from users.
+# Amazon S3 (Simple Storage Service): Already used for storing uploaded files from users.
 S3 Lifecycle Policies: To manage data lifecycle by automatically transitioning objects between storage classes or deleting old objects.
 Networking:
 
-#4.Amazon VPC (Virtual Private Cloud): To securely deploy EC2 instances, Elastic Beanstalk, MongoDB, and other services. The VPC can be configured with subnets (public and private) and security groups for access control.
+# Amazon VPC (Virtual Private Cloud): To securely deploy EC2 instances, Elastic Beanstalk, MongoDB, and other services. The VPC can be configured with subnets (public and private) and security groups for access control.
 Elastic Load Balancer (ELB): For distributing traffic across multiple EC2 instances or Beanstalk environments.
 Amazon Route 53: For DNS management and domain name routing to your application.
 NAT Gateway: If private subnets are used, a NAT gateway may be required to allow internet access for instances running in private subnets.
