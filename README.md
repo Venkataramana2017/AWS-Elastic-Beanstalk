@@ -55,13 +55,14 @@ OpenShift is an enterprise-grade Kubernetes platform for containerized applicati
 #################  question 3 ####################
 
 Support Multiple Environments for Regional and Test Isolation :- Environment Segregation:-Use AWS Organizations and multiple AWS accounts to separate North America and other regional environments. Each region can have its own account for isolated data and resources, simplifying compliance and data residency requirements.
+they can use local stack for the development and testing . to save cost .
 
 Test environments, consider creating separate AWS accounts per team or squad or use Elastic Beanstalk or App Runner to create isolated environments per feature branch.
 
 Infrastructure as Code (IaC):- Use AWS CFT, Terraform, or AWS CDK to define and automate environment creation, enabling you to quickly replicate environments with consistent configurations. This will make it easier to provision resources for multiple environments across regions.
 
 Data Segregation:•Use Amazon DocumentDB or Amazon DynamoDB with region-specific clusters to keep data isolated per region.
-S3 Buckets should be region-specific for storing files, ensuring data complies with residency requirements and limiting cross-region data transfer.
+S3 Buckets should be region-specific for storing files, ensuring data complies with residency requirements and limiting cross-region data transfer. Replication , DynamoDB as well with replication .
 
 2. Implement Backups for Disaster Recovery :- 
 Database Backups:-If using Amazon DocumentDB, enable automated daily backups and point-in-time recovery to ensure data durability.
@@ -101,10 +102,10 @@ Summary of Recommended Changes:
 
 1.Environment Scalability: Use AWS Organizations, isolated VPCs per environment, and IaC for easy environment replication.
 
-2.Backup and Disaster Recovery: Implement automated backups for databases, cross-region replication for critical data, and disaster recovery.
+2.Backup and Disaster Recovery: Implement automated backups for databases, cross-region replication for critical data in S3 or ebs volumes, and disaster recovery.
 
-3.Microservices Architecture: Leverage ECS/EKS, API Gateway, and SQS/EventBridge for decoupled, resilient services.
+3.Microservices Architecture: Leverage ECS/EKS, API Gateway, and SQS/EventBridge for decoupled, resilient services.AWS Lambda function for workertask .
 
-4.Enhanced Security and Compliance: Apply IAM best practices, secure networking, secrets management, and logging for auditability, backed by AWS compliance features to demonstrate security to clients.
+4.Enhanced Security and Compliance: Apply IAM best practices, secure networking, secrets management, and logging for auditability, backed by AWS compliance features to demonstrate security to clients. user waf and AWS Shield .
 
 
