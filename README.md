@@ -3,7 +3,7 @@
 
 2.EC2 with MongoDB
    
-3.Dile store - Amazon S3 Bucket 
+3.File store - Amazon S3 Bucket 
 
 4.Networking - VPC, Subnets(private &Public), Security Groups(Access MongoDB instace and S3 ), and NAT Gateway
 
