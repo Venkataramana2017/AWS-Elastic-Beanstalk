@@ -1,7 +1,28 @@
-# AWS-Elastic-Beanstalk
+# AWS-Elastic-Beanstalk -  AWS Resources Needed
+1.Elastic Beanstalk (with Auto Scaling and ELB)
+2. EC2 with MongoDB
+3.Amazon S3
+4.VPC, Subnets, Security Groups, and NAT Gateway
+5.CloudWatch and OpenSearch Service
+6.CodePipeline and CodeBuild (or Bitbucket Pipelines if preferred)
+7.Secrets Manager
+8.WAF and Shield
+9.IAM Roles, Policies, and Backups
 
-# AWS Resources Needed
-Compute Resources:
+1 Compute  Recosurce (EC2 )
+2.Autoscalling group 
+3 Elstic Loadbalancer 
+4 Database - Amazon Document DB or MongoDB EC2 
+5 File Store -  S3 Bucket 
+6 Networking - VPC , Subnets(public and private), NAT, DG 
+7  SG - Setup each component to access MogoDB Instance, S3 Bucket)
+8 Logingn and Monitering -
+Amazon Cloudwatch or Amazon Open search -Migrate to the managed OpenSearch Service, which provides managed search and analytics capabilities with better scaling and maintenance.
+
+API Management and External Integrations
+•AWS Secrets Manager or AWS Parameter Store: Store and manage secrets such as API keys, database credentials, etc., to securely access third-party services.
+•AWS API Gateway: Consider API Gateway to manage external APIs if the backend requires proxying external requests or caching responses.
+
 
 # Amazon EC2 (Elastic Compute Cloud): 
 For manually managing compute resources or specialized requirements. The existing MongoDB server is already running on an EC2 instance.
