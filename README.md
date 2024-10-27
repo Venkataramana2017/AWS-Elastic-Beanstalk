@@ -23,21 +23,23 @@ Amazon EKS/GKE/AKS : Managed Kubernetes service for deploying containerized appl
 2. AWS Lambda (Serverless)
  AWS Lambda allows deploying functions to run without managing servers. For applications with independent functions or microservices, Lambda could replace the need for traditional servers. This works well with API Gateway to handle HTTP requests, though it’s generally best suited for simpler applications or event-driven architecture rather than stateful applications.
 3. AWS App Runner
- 
  AWS App Runner is a managed service designed to simplify deploying web applications or APIs from code or containers without worrying about the infrastructure. It automatically handles load balancing, scaling, and HTTPS for a hands-off deployment experience.
 
 4. AWS Lightsail
-•	AWS Lightsail provides a simplified platform with pre-configured compute, storage, and networking resources, making it a good option for smaller applications needing quick deployment with basic scalability. It’s also well-suited for single-instance applications or early-stage projects.
+ AWS Lightsail provides a simplified platform with pre-configured compute, storage, and networking resources, making it a good option for smaller applications needing quick deployment with basic scalability. It’s also well-suited for single-instance applications or early-stage projects.
 
 5. Other Cloud Providers’ PaaS Offerings
 Google Cloud Platform (GCP) App Engine: A fully managed platform that supports a wide range of languages and frameworks, with automatic scaling and load balancing.
 
 Microsoft Azure App Service: A managed platform for building, deploying, and scaling web apps with support for multiple languages and frameworks, along with seamless CI/CD integration.
-	6. Heroku
+
+6. Heroku
  Heroku is a popular PaaS for deploying applications without managing infrastructure. It’s easy to set up, supports multiple programming languages, and is particularly well-suited for smaller applications or startups. It integrates well with CI/CD pipelines.
-	7. Red Hat OpenShift
+
+8. Red Hat OpenShift
+   
 OpenShift is an enterprise-grade Kubernetes platform for containerized applications with features for managing CI/CD, monitoring, and automated scaling. Its  robust Kubernetes-based solution with enhanced security and development features.
-################################################################## End of Question 2 #################################################
+################################################ End of Question 2 ###########
 
 
 # Implement a Microservices Architecture
