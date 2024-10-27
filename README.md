@@ -17,12 +17,11 @@
 
 9.IAM Roles, Policies, and Backups
 
-API Management and External Integrations
-
-•AWS Secrets Manager or AWS Parameter Store: Store and manage secrets such as API keys, database credentials, etc., to securely access third-party services.
+10.API Management and External Integrations :- AWS Secrets Manager or AWS Parameter Store: Store and manage secrets such as API keys, database credentials, etc., to securely access third-party services.
 
 •AWS API Gateway: Consider API Gateway to manage external APIs if the backend requires proxying external requests or caching responses.
-##################################################################################### Question No.2 #####################
+
+###################################### Question No.2 #####################
 
 # Alternatives to AWS Elastic Beanstalk
 AWS Elastic Beanstalk is a platform-as-a-service (PaaS) that abstracts infrastructure management, but there are several other options available for deploying your web application:
@@ -52,7 +51,8 @@ Microsoft Azure App Service: A managed platform for building, deploying, and sca
 OpenShift is an enterprise-grade Kubernetes platform for containerized applications with features for managing CI/CD, monitoring, and automated scaling. Its  robust Kubernetes-based solution with enhanced security and development features.
 ################################ End of Question 2 ###########
 
-#############  question 3 ############
+
+#################  question 3 ####################
 
 Support Multiple Environments for Regional and Test Isolation :- Environment Segregation:-Use AWS Organizations and multiple AWS accounts to separate North America and other regional environments. Each region can have its own account for isolated data and resources, simplifying compliance and data residency requirements.
 
