@@ -1,7 +1,7 @@
 # AWS-Elastic-Beanstalk -  AWS Resources Needed
 1.Elastic Beanstalk (with Auto Scaling and ELB) 
 
-2. EC2 with MongoDB
+2.EC2 with MongoDB
    
 3.Dile store - Amazon S3 Bucket 
 
