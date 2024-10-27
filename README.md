@@ -1,15 +1,26 @@
 # AWS-Elastic-Beanstalk -  AWS Resources Needed
 1.Elastic Beanstalk (with Auto Scaling and ELB) 
+
 2. EC2 with MongoDB
+   
 3.Dile store - Amazon S3 Bucket 
+
 4.Networking - VPC, Subnets(private &Public), Security Groups(Access MongoDB instace and S3 ), and NAT Gateway
+
 5.CloudWatch and OpenSearch Service - Amazon Open search -Migrate to the managed OpenSearch Service, which provides managed search and analytics capabilities with better scaling and maintenance.
+
 6.CodePipeline and CodeBuild (or Bitbucket Pipelines if preferred)
+
 7.Secrets Manager
+
 8.WAF and Shield
+
 9.IAM Roles, Policies, and Backups
+
 API Management and External Integrations
+
 •AWS Secrets Manager or AWS Parameter Store: Store and manage secrets such as API keys, database credentials, etc., to securely access third-party services.
+
 •AWS API Gateway: Consider API Gateway to manage external APIs if the backend requires proxying external requests or caching responses.
 ##################################################################################### Question No.2 #####################
 
