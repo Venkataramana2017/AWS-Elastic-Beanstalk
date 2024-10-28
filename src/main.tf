@@ -2,9 +2,9 @@ provider "aws" {
   region  = var.region
 }
 
-module "dns_and_ssl" {
+module "DNS_and_SSL_Certificate" {
 
-  source = "./modules/dns_and_ssl/"
+  source = "./modules/DNS_and_SSL_Certificate/"
   
   
   domain_name                                           = var.domain_name
@@ -12,9 +12,9 @@ module "dns_and_ssl" {
   zone                                                  = module.eb.zone
 }
 
-module "eb" {
+module "elasticbeanstalk" {
 
-  source = "./modules/beanstalk/"
+  source = "./modules/elasticbeanstalk/"
   
   
   app_tags                          = var.app_tags
